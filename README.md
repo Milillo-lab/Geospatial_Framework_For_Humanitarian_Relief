@@ -1,0 +1,2 @@
+# Geospatial_Framework_For_Humanitarian_Relief
+Applied Geospatial Computations Lab Project
