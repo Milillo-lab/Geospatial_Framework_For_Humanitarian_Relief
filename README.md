@@ -209,5 +209,3 @@ The user is invited to change and choose necessary variables from the configurat
 ## 8. Plotting
 
 All plotting codes have explanations for each option / variable in the sections provided above them.
-
-## Final Message
