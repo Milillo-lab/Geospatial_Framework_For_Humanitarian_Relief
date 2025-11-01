@@ -1,6 +1,12 @@
 # Geospatial_Framework_For_Humanitarian_Relief
 Applied Geospatial Computations Lab Project
 
+Designed by:
+Ashutosh Lamsal & Demirkan Orhun Oral
+
+Instructor:
+Dr. Pietro Milillo
+
 # Urban Damage and Infrastructure Analysis Pipeline
 
 ## 1. Aim of the Project
