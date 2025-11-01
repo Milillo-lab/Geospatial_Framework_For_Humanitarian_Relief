@@ -169,10 +169,10 @@ P = {
     "OUT_NAME": "Affected_Population_by_Building.png",
 
     # Manual zoom in EPSG:4326 (set all to None for auto extent)
-    "lon_min": 36.140,
-    "lon_max": 36.160,
-    "lat_min": 36.185,
-    "lat_max": 36.205,
+    "lon_min": None,
+    "lon_max": None,
+    "lat_min": None,
+    "lat_max": None,
 
     # Figure & labels
     "FIGSIZE": (10, 9),
@@ -298,4 +298,5 @@ if "Damaged" in b.columns and "Pop_Est" in b.columns:
     print(f"   Total population (check):                    {total_pop:,}")
 else:
     print(" Columns 'Damaged' and/or 'Pop_Est' not found in building dataset.")
+
 
