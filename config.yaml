@@ -36,14 +36,10 @@ TILE_M: 2000             # tile size in meters
 OVERLAP_M: 50            # tile overlap in meters to avoid edge artifacts
 DISSOLVE_IN_TILE: true   # dissolve damaged polygons within each tile
 
-# -------------------- C1/C6) Population & Density Grid --------------------
+# -------------------- C1) Population Data --------------------
 # Population raster filename (relative to ./Inputs in code)
 POP_FILE: "kahramanmaras_population.tif"
 
-CELL_SIZE: 100           # (C6) grid cell size in meters for population aggregation
-
-# Height settings for C1 volume estimation
-# HEIGHT_COL already defined below in E1; you can keep one column name across sections
 DEFAULT_HEIGHT: null     # e.g., 3.0 to force a default height (meters); null to skip
 
 # -------------------- D1) Humanitarian Planning Constants --------------------
@@ -83,3 +79,4 @@ USE_APPROX_BC: true           # True → approximate BC (faster), False → exac
 K_SAMPLES: 2000               # number of random samples for approximate BC
 BC_WEIGHT: "length"           # edge weight to use for BC
 BC_NORMALIZED: true           # normalize BC values to [0,1]
+
