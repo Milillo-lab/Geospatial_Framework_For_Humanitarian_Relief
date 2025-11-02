@@ -64,7 +64,7 @@ Grayscale or single-band raster used to detect damaged areas.
 → Must cover the study area. Defined in section B1.
 
 **Population Raster**  
-Gridded population dataset (e.g., WorldPop, GHSL, or national census raster).  
+Gridded population dataset (e.g., WorldPop, GHSL, or Facebook High Resolution Population Data).  
 → Used to allocate estimated population to buildings (section C).
 
 ### **Optional Inputs**
