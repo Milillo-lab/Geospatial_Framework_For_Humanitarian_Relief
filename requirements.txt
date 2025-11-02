@@ -1,0 +1,27 @@
+# ===== Core numeric/data =====
+numpy                 # arrays & math used throughout
+pandas                 # tabular IO, joins, grouping
+PyYAML                 # reading config.yaml files safely
+
+# ===== Geospatial stack (vectors/CRS/rasters) =====
+geopandas               # GeoDataFrames, spatial joins, read/write shapefiles
+shapely                 # geometry ops (buffer, union, intersects)
+fiona                   # vector file IO backend (shp/gpkg) used by GeoPandas
+pyproj                  # CRS transforms (.to_crs, estimate_utm_crs)
+rasterio                # read/write rasters (DPM/pop), masking, windows
+rtree                   # spatial index for GeoPandas .sindex (fast tiling/joins)
+
+# ===== Networks (OSM + graph analysis) =====
+osmnx                   # OSM download, graph_from_gdfs, routing, nearest_nodes
+networkx                # shortest paths, betweenness centrality
+
+# ===== Web feature service (optional but imported in A) =====
+OWSLib                # WFS access (WebFeatureService)
+
+# ===== Plotting / Notebook UX =====
+matplotlib             # all plotting
+matplotlib-scalebar    # map scalebar overlay
+IPython                # display(Image(...)) in notebooks
+
+# ===== Utilities / File Handling =====
+pathlib                # consistent Path objects (included by default in Python ≥3.4, optional pin)
