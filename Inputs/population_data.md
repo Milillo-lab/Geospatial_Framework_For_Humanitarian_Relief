@@ -1,12 +1,12 @@
 # High Resolution Population Density (HRSL) — Download & Use Guide
 
-This guide explains **how to obtain and use** the High Resolution Population Density maps (HRSL) provided by **Data for Good at Meta** (formerly Facebook). You’ll find step-by-step instructions to download rasters, export via Google Earth Engine (GEE), and load them in QGIS/Python.
+This guide explains **how to obtain and use** the High Resolution Population Density maps (HRSL) provided by **Data for Good at Meta** (formerly Facebook). You’ll find step-by-step instructions to download rasters, and load them in QGIS/Python.
 
-> **What is HRSL?** Country-level population density rasters derived from high-resolution imagery and census data, typically ~30 m resolution (varies by country). Values represent estimated **people per pixel**.
+**What is HRSL?** Country-level population density rasters derived from high-resolution imagery and census data, typically ~30 m resolution (varies by country). Values represent estimated **people per pixel**.
 
 ---
 
-## 1) Download via HDX (Humanitarian Data Exchange)
+## Download via HDX (Humanitarian Data Exchange)
 
 **Best for**: quick, per-country GeoTIFFs/ZIPs.
 
@@ -23,97 +23,51 @@ This guide explains **how to obtain and use** the High Resolution Population Den
 
 ---
 
-## 2) Export via Google Earth Engine (GEE)
+## After you download the population raster from HDX, you can now view them either using QGIS or Python
 
-**Best for**: programmatic export, clipping to AOI, reprojection.
+    ## 1) Load in QGIS
 
-> You can use a community-hosted HRSL collection in GEE (country mosaics), then clip/export to Google Drive or Cloud Storage.
+    **Best for**: quick viewing and basic GIS operations.
 
-### Example (JavaScript, GEE Code Editor)
+    1. Open **QGIS** → **Layer** → **Add Layer** → **Add Raster Layer…**
+    2. Browse to your downloaded HRSL `.tif` → **Add**.
+    3. Right-click the layer → **Properties** → **Symbology** → set **Singleband pseudocolor** and choose a color ramp.
+    4. (Optional) Reproject to your project CRS via **Raster** → **Projections** → **Warp (Reproject)**.
 
-```js
-// ---------------------------
-// HRSL via community asset
-// ---------------------------
-var hrsl = ee.ImageCollection('projects/sat-io/open-datasets/hrsl'); 
-// TIP: Inspect the collection; it contains per-country images.
+    ---
 
-// 1) Pick a country by ISO code (example: Nepal 'NPL')
-var country = ee.FeatureCollection('FAO/GAUL/2015/level0')
-  .filter(ee.Filter.eq('ADM0_NAME', 'Nepal')); // change country name
+    ## 2) Python (GeoPandas/Rasterio) — Quick Start
 
-// 2) Filter HRSL for the same country; assets are named by ISO code
-// If your country isn't matched by name, browse the collection in the Inspector.
-var hrslNPL = hrsl.filter(ee.Filter.eq('country', 'NPL')).mosaic();
+    ```python
+    import rasterio
+    from rasterio.mask import mask
+    import geopandas as gpd
+    import numpy as np
 
-// 3) Clip to country (or your AOI)
-var clipped = hrslNPL.clip(country);
+    # Paths
+    hrsl_tif = "path/to/hrsl_country.tif"
+    aoi = gpd.read_file("path/to/aoi.shp").to_crs("EPSG:4326")
 
-// 4) Visualize (stretch values for display)
-Map.centerObject(country, 7);
-Map.addLayer(clipped, {min:0, max:500, palette:['white','yellow','red']}, 'HRSL');
+    # Clip HRSL to AOI
+    with rasterio.open(hrsl_tif) as src:
+        aoi_geom = [aoi.geometry.unary_union.__geo_interface__]
+        out_img, out_transform = mask(src, aoi_geom, crop=True)
+        out = out_img[0].astype(np.float32)
+        nodata = src.nodata
 
-// 5) Export GeoTIFF to Google Drive
-Export.image.toDrive({
-  image: clipped,
-  description: 'HRSL_Nepal',
-  fileNamePrefix: 'hrsl_nepal',
-  region: country.geometry(),
-  scale: 30,         // adjust if needed; some HRSL are ~30m, some coarser
-  maxPixels: 1e13
-});
-```
+    # Basic stats (exclude nodata)
+    if nodata is not None:
+        out = np.where(out == nodata, np.nan, out)
 
-**Tips**
+    print("HRSL stats (AOI):")
+    print("  min:", np.nanmin(out))
+    print("  max:", np.nanmax(out))
+    print("  sum (people):", np.nansum(out))
+    ```
 
-* If your country isn’t found by name, filter the collection by the `system:index` or `country` property visible in the Inspector.
-* For a smaller file, replace `region: country.geometry()` with your custom AOI polygon and/or set `scale` appropriately.
+    ---
 
----
-
-## 3) Load in QGIS
-
-**Best for**: quick viewing and basic GIS operations.
-
-1. Open **QGIS** → **Layer** → **Add Layer** → **Add Raster Layer…**
-2. Browse to your downloaded HRSL `.tif` → **Add**.
-3. Right-click the layer → **Properties** → **Symbology** → set **Singleband pseudocolor** and choose a color ramp.
-4. (Optional) Reproject to your project CRS via **Raster** → **Projections** → **Warp (Reproject)**.
-
----
-
-## 4) Python (GeoPandas/Rasterio) — Quick Start
-
-```python
-import rasterio
-from rasterio.mask import mask
-import geopandas as gpd
-import numpy as np
-
-# Paths
-hrsl_tif = "path/to/hrsl_country.tif"
-aoi = gpd.read_file("path/to/aoi.shp").to_crs("EPSG:4326")
-
-# Clip HRSL to AOI
-with rasterio.open(hrsl_tif) as src:
-    aoi_geom = [aoi.geometry.unary_union.__geo_interface__]
-    out_img, out_transform = mask(src, aoi_geom, crop=True)
-    out = out_img[0].astype(np.float32)
-    nodata = src.nodata
-
-# Basic stats (exclude nodata)
-if nodata is not None:
-    out = np.where(out == nodata, np.nan, out)
-
-print("HRSL stats (AOI):")
-print("  min:", np.nanmin(out))
-print("  max:", np.nanmax(out))
-print("  sum (people):", np.nansum(out))
-```
-
----
-
-## 5) Interpreting Values
+## Interpreting Values
 
 * **Pixel value** ≈ **people per pixel** (not per km²).
 * For per-square-kilometer density, convert using pixel area (depends on CRS & resolution).
@@ -121,7 +75,7 @@ print("  sum (people):", np.nansum(out))
 
 ---
 
-## 6) Common Pitfalls & Fixes
+## Common Pitfalls & Fixes
 
 * **Huge files**: Clip to an AOI in GEE or QGIS before downloading/exporting.
 * **CRS mismatch**: Reproject layers to a common CRS (e.g., EPSG:4326 or your local UTM).
@@ -130,7 +84,7 @@ print("  sum (people):", np.nansum(out))
 
 ---
 
-## 7) Suggested Citation / Attribution
+## Suggested Citation / Attribution
 
 When you publish results or share maps, include attribution similar to:
 
@@ -159,7 +113,7 @@ README.md
 ## 9) FAQ
 
 **Q: I can’t find my country on HDX.**
-A: Try alternative spellings or check for regional packs. If not available, consider the GEE approach.
+A: Try alternative spellings or check for regional packs.
 
 **Q: The values look too small/large.**
 A: Confirm whether the layer is **population per pixel** vs **density per km²**, and check if you need to resample or aggregate.
