@@ -1,4 +1,4 @@
-# Damage Proxy Map (DPM) Input
+# Damage Proxy Map (DPM) Data
 
 This pipeline requires a Damage Proxy Map (DPM) raster to identify damaged areas after a disaster. A DPM is a single-band GeoTIFF produced from remote sensing change analysis (commonly SAR), where higher pixel values represent greater likelihood of damage.
 
@@ -10,12 +10,12 @@ This pipeline requires a Damage Proxy Map (DPM) raster to identify damaged areas
 - Must include valid spatial reference (CRS)
 
 ## File Location
-Place the file inside your project inputs directory (./Inputs)
+Place the file inside your project data directory (./Data)
 Then change the file name in configuration file (config.yaml)
 
 ## Example
 The DPM used in this example is from; https://zenodo.org/records/15369579
-For use, download the DPM and paste it into your inputs directory.
+For use, download the DPM and paste it into your data directory.
 
 
 # High Resolution Population Density (HRSL) — Download & Use Guide
@@ -140,4 +140,5 @@ A: Confirm whether the layer is **population per pixel** vs **density per km²**
 
 **Q: The export fails in GEE due to maxPixels.**
 A: Increase `maxPixels`, export a smaller AOI, or reduce the resolution (`scale`).
+
 
