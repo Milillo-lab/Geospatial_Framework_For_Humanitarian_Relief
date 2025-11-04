@@ -1,12 +1,3 @@
-# Geospatial_Framework_For_Humanitarian_Relief
-Applied Geospatial Computations Lab Project
-
-Designed by:
-Ashutosh Lamsal & Demirkan Orhun Oral
-
-Instructor:
-Dr. Pietro Milillo
-
 # Urban Damage and Infrastructure Analysis Pipeline
 
 ## 1. Aim of the Project
@@ -51,23 +42,23 @@ I) Betweenness Centrality Analysis
 
 ---
 
-## 3. Required and Optional Inputs
+## 3. Required and Optional Data Inputs
 
 The workflow automatically downloads or generates most layers internally.  
-Only two inputs are strictly required (Read "How to Download" sections for help), while others are optional aids for defining or refining the study area.
-Put the related datasets that you want to include in ./Inputs folder.
+Only two dataset inputs are strictly required (Read "How to Download" sections for help), while others are optional aids for defining or refining the study area.
+Put the related datasets that you want to include in ./Data folder.
 
-### **Required Inputs**
+### **Required Data**
 
 **DPM Raster (Damage Proxy Map)**  
 Grayscale or single-band raster used to detect damaged areas.  
 → Must cover the study area. Defined in section B1.
 
 **Population Raster**  
-Gridded population dataset (e.g., WorldPop, GHSL, or Facebook High Resolution Population Data).  
+Gridded population dataset (e.g., WorldPop, GHSL, or national census raster).  
 → Used to allocate estimated population to buildings (section C).
 
-### **Optional Inputs**
+### **Optional Data**
 
 **AOI Boundary (Polygon)**  
 Optional shapefile/GeoJSON defining the boundary of the study area.  
@@ -188,7 +179,7 @@ This project is designed to run from start to finish in a **Jupyter Notebook**, 
 
 ### **A. Before You Begin**
 - Install requirements with the "0. Necessities" code.
-- Confirm that you have the required input files in the correct folders.
+- Confirm that you have the required data files in the correct folders.
 
 ### **B. Running the Code**
 - Run the notebook cell by cell from top to bottom.  
