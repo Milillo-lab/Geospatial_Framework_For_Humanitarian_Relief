@@ -106,21 +106,28 @@ This guide explains **how to obtain and use** the High Resolution Population Den
 
 ## Suggested Citation / Attribution
 
-When you publish results or share high resolution population maps, include attribution to:
+If you use the **High-Resolution Population Maps** or related datasets in your research, please cite the following work:
 
+> **Tiecke, Tobias G., Liu, Xianming, Zhang, Amy, Gros, Andreas, Li, Nan, Yetman, Gregory, Kilic, Talip, Murray, Siobhan, Blankespoor, Brian, Prydz, Espen B., & Dang, Hai-Anh H. (2017).**  
+> *Mapping the world population one building at a time.*  
+> arXiv preprint [arXiv:1712.05839](https://arxiv.org/abs/1712.05839)
+
+**BibTeX:**
+```bibtex
 @misc{tiecke2017mappingworldpopulationbuilding,
-      title={Mapping the world population one building at a time}, 
-      author={Tobias G. Tiecke and Xianming Liu and Amy Zhang and Andreas Gros and Nan Li and Gregory Yetman and Talip Kilic and Siobhan Murray and Brian Blankespoor and Espen B. Prydz and Hai-Anh H. Dang},
-      year={2017},
-      eprint={1712.05839},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/1712.05839}, 
+  title={Mapping the world population one building at a time},
+  author={Tobias G. Tiecke and Xianming Liu and Amy Zhang and Andreas Gros and Nan Li and Gregory Yetman and Talip Kilic and Siobhan Murray and Brian Blankespoor and Espen B. Prydz and Hai-Anh H. Dang},
+  year={2017},
+  eprint={1712.05839},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/1712.05839}
 }
+
 
 ---
 
-## 8) Folder Structure (Example)
+## Folder Structure (Example)
 
 ```
 data/
@@ -137,7 +144,7 @@ README.md
 
 ---
 
-## 9) FAQ
+## FAQ
 
 **Q: I can’t find my country on HDX.**
 A: Try alternative spellings or check for regional packs.
