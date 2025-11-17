@@ -125,8 +125,26 @@ If you use the **High-Resolution Population Maps** or related datasets in your r
 }
 
 ```
+## Global Building Atlas Dataset (Manual Download)
+
+The code in this repository normally downloads building polygons automatically through the **Global Building Atlas WFS service**.  
+However, if the server is unavailable or returns errors (e.g., 502 Bad Gateway), you can manually download the building data and use it instead.
 
 ---
+
+### Requirements for Manual Input
+To ensure correct processing in the pipeline, the manually downloaded dataset must satisfy:
+
+- **File format:** ESRI Shapefile (`.shp`) or GeoPackage (`.gpkg`)  
+- Should contain **building footprint polygons** (LoD1)  
+- Must include **valid spatial reference (CRS)**  
+- The layer must **cover your Area of Interest (AOI)**  
+- Optional but recommended fields:
+  - `height` column (for buffer/volume calculations)
+  - Unique building IDs
+
+---
+
 
 ## Folder Structure (Example)
 
