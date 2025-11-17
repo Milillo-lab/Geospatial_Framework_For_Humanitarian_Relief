@@ -30,7 +30,7 @@ This guide explains **how to obtain and use** the High Resolution Population Den
 
 **Best for**: quick, per-country GeoTIFFs/ZIPs.
 
-1. Go to the **High Resolution Population Density Maps** page on HDX. [Link](https://data.humdata.org/organization/meta?q=population%20density&sort=if(gt(last_modified%2Creview_date)%2Clast_modified%2Creview_date)
+1. Go to the **High Resolution Population Density Maps** page on HDX. [Link](https://data.humdata.org/organization/meta?q=population%20density&sort=if(gt(last_modified%2Creview_date)%2Clast_modified%2Creview_date )
 2. Use the search box to find your **country** (e.g., *Nepal*, *Turkey*, *Kenya*).
 3. Open the country dataset page and review the **Files** section (usually GeoTIFF or a ZIP containing `.tif`).
 4. Click **Download**. (You may need to sign in to HDX to accept terms.)
