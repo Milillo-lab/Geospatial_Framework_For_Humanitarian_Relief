@@ -1,4 +1,4 @@
-# Damage Proxy Map (DPM) Data
+# 1. Damage Proxy Map (DPM) Data
 
 This pipeline requires a Damage Proxy Map (DPM) raster to identify damaged areas after a disaster. A DPM is a single-band GeoTIFF produced from remote sensing change analysis (commonly SAR), where higher pixel values represent greater likelihood of damage.
 
@@ -18,7 +18,7 @@ The DPM used in this example is from; https://zenodo.org/records/15369579
 For use, download the DPM and paste it into your data directory.
 
 
-# High Resolution Population Density (HRSL) — Download & Use Guide
+# 2. High Resolution Population Density (HRSL) — Download & Use Guide
 
 This guide explains **how to obtain and use** the High Resolution Population Density maps (HRSL) provided by **Data for Good at Meta** (formerly Facebook). You’ll find step-by-step instructions to download rasters, and load them in QGIS/Python.
 
@@ -125,7 +125,7 @@ If you use the **High-Resolution Population Maps** or related datasets in your r
 }
 
 ```
-## Global Building Atlas Dataset (Manual Download)
+# 3. Global Building Atlas Dataset (Manual Download)
 
 The code in this repository normally downloads building polygons automatically through the **Global Building Atlas WFS service**.  
 However, if the server is unavailable or returns errors (e.g., 502 Bad Gateway), you can manually download the building data and use it instead.
@@ -190,4 +190,5 @@ A: Try alternative spellings or check for regional packs.
 
 **Q: The values look too small/large.**
 A: Confirm whether the layer is **population per pixel** vs **density per km²**, and check if you need to resample or aggregate.
+
 
