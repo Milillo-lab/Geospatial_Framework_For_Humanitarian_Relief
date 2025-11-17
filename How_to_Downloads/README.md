@@ -144,7 +144,27 @@ To ensure correct processing in the pipeline, the manually downloaded dataset mu
   - Unique building IDs
 
 ---
+#### Full Global Download (Recommended for manual use)**
+**Download from mediaTUM:**  
+https://mediatum.ub.tum.de/1782307
 
+This download contains the full worldwide LoD1 building dataset as vector files (shapefiles and geopackages).  
+You can extract only the region you need using **QGIS** or **GeoPandas**.
+
+After downloading the building data:
+
+1. Put it inside your project’s data directory:
+
+2. Update your `config.yaml` to point to the file:
+
+```yaml
+# Example (manual download)
+BUILDING_FILE: "your_building_file.gpkg"
+```
+3. Disable WFS in your workflow (optional) if needed.
+
+
+---
 
 ## Folder Structure (Example)
 
