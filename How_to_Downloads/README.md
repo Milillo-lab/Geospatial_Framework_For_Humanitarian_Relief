@@ -170,14 +170,8 @@ BUILDING_FILE: "your_building_file.gpkg"
 
 ```
 data/
-  hrsl/
     hrsl_nepal.tif
     hrsl_turkey.tif
-  aoi/
-    aoi_nepal.shp
-outputs/
-  hrsl_stats.csv
-  hrsl_clipped_nepal.tif
 README.md
 ```
 
@@ -190,5 +184,6 @@ A: Try alternative spellings or check for regional packs.
 
 **Q: The values look too small/large.**
 A: Confirm whether the layer is **population per pixel** vs **density per km²**, and check if you need to resample or aggregate.
+
 
 
