@@ -106,10 +106,17 @@ This guide explains **how to obtain and use** the High Resolution Population Den
 
 ## Suggested Citation / Attribution
 
-When you publish results or share maps, include attribution similar to:
+When you publish results or share high resolution population maps, include attribution to:
 
-> *“High Resolution Population Density Maps (HRSL) from Data for Good at Meta (Facebook) and partners. Accessed [Month Year].”*
-> *(Add the source page and any country-specific license text from the download page.)*
+@misc{tiecke2017mappingworldpopulationbuilding,
+      title={Mapping the world population one building at a time}, 
+      author={Tobias G. Tiecke and Xianming Liu and Amy Zhang and Andreas Gros and Nan Li and Gregory Yetman and Talip Kilic and Siobhan Murray and Brian Blankespoor and Espen B. Prydz and Hai-Anh H. Dang},
+      year={2017},
+      eprint={1712.05839},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/1712.05839}, 
+}
 
 ---
 
