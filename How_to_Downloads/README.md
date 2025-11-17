@@ -174,6 +174,33 @@ data/
     hrsl_turkey.tif
 README.md
 ```
+## Suggested Citation / Attribution
+
+If you use the **High-Resolution Population Maps** or related datasets in your research, please cite the following work:
+
+> **Tiecke, Tobias G., Liu, Xianming, Zhang, Amy, Gros, Andreas, Li, Nan, Yetman, Gregory, Kilic, Talip, Murray, Siobhan, Blankespoor, Brian, Prydz, Espen B., & Dang, Hai-Anh H. (2017).**  
+> *Mapping the world population one building at a time.*  
+> arXiv preprint [arXiv:1712.05839](https://arxiv.org/abs/1712.05839)
+
+**BibTeX:**
+```bibtex
+@misc{1782307,
+	author = {Zhu, Xiao Xiang and  Chen, Sining and  Zhang, Fahong and  Shi, Yilei and  Wang, Yuanyuan},
+	title = {{GlobalBuildingAtlas: An Open Global and Complete Dataset of Building Polygons, Heights and LoD1 3D Models}},
+	type = {Dataset},
+	year = {2025},
+
+        type = {Forschungsdaten},
+
+        abstract = {GlobalBuildingAtlas is a dataset providing global and complete coverage of building polygons (GBA.Polygon), heights (GBA.Height) and Level of Detail 1 (LoD1) 3D building models (GBA.LoD1). It is the first open dataset to offer high quality, consistent, and complete building data in 2D and 3D at the individual building level on a global scale. The dataset is delivered in tiles of 5 degree by 5 degree, with GBA.Polygon and GBA.LoD1 in GeoJSON format, and GBA.Height in GeoTiff format. Details see https://github.com/zhu-xlab/GlobalBuildingAtlas.},
+
+        keywords = {Building Footprint; Building Height; 3D Building Models; Remote Sensing; Earth Observation; Deep Learning},
+
+        doi = {10.14459/2025mp1782307},
+
+}
+
+```
 
 ---
 
@@ -184,6 +211,7 @@ A: Try alternative spellings or check for regional packs.
 
 **Q: The values look too small/large.**
 A: Confirm whether the layer is **population per pixel** vs **density per km²**, and check if you need to resample or aggregate.
+
 
 
 
