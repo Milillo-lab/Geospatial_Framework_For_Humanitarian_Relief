@@ -11,9 +11,9 @@ the main README.md file instructions in main GitHub repository.
 	1. DPM
 	2. Population
 		into the ./Data folder. 
-		
-## How_to_Downloads - instructions can be followed if necessary.
+ How_to_Downloads - instructions can be followed if necessary.
 	
-The code is modular, once completely run, all of the pipeline can get the necessary data from
+## The code is modular;
+ once completely run, all of the pipeline can get the necessary data from
 ./Outputs/A-I folders to run itself. Hence if for instance;
 Building Data Download Server is not working -> User is invited to download said data manually and paste it into ./Outputs/A folder. This will allow the code to read it from there and work without a problem.
