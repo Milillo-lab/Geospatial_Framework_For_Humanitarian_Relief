@@ -2,11 +2,13 @@
 ---
 
 <p align="center">
-  <strong>Ashutosh Lamsal<sup>1</sup>, Demirkan Orhun Oral<sup>1</sup>, Pietro Milillo<sup>1</sup></strong>
+  <strong>Ashutosh Lamsal<sup>1</sup><sup>2<sup>, Demirkan Orhun Oral<sup>1</sup><sup>2<sup>, Pietro Milillo<sup>1</sup><sup>2<sup></strong>
 </p>
 
 <p align="center">
   <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston,<br>
+  Houston, TX, USA
+  <sup>2</sup> National Center for Airborne Laser Mapping, University of Houston,<br>
   Houston, TX, USA
 </p>
 
