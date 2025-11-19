@@ -144,7 +144,7 @@ To ensure correct processing in the pipeline, the manually downloaded dataset mu
   - Unique building IDs
 
 ---
-#### Full Global Download (Recommended for manual use)**
+#### Full Global Download (Recommended for manual use)
 **Download from mediaTUM:**  
 https://mediatum.ub.tum.de/1782307
 
@@ -153,26 +153,9 @@ You can extract only the region you need using **QGIS** or **GeoPandas**.
 
 After downloading the building data:
 
-1. Put it inside your project’s data directory:
-
-2. Update your `config.yaml` to point to the file:
-
-```yaml
-# Example (manual download)
-BUILDING_FILE: "your_building_file.gpkg"
-```
-3. Disable WFS in your workflow (optional) if needed.
+Put it inside ./Outputs/A for the pipeline to read it from there in subsequent runs.
 
 
----
-
-## Folder Structure (Example)
-
-```
-data/
-    hrsl_nepal.tif
-    hrsl_turkey.tif
-README.md
 ```
 ## Suggested Citation / Attribution
 
@@ -205,6 +188,7 @@ A: Try alternative spellings or check for regional packs.
 
 **Q: The values look too small/large.**
 A: Confirm whether the layer is **population per pixel** vs **density per km²**, and check if you need to resample or aggregate.
+
 
 
 
