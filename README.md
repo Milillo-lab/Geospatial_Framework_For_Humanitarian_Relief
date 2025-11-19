@@ -48,8 +48,8 @@ B) Building Damage Evaluation (DPM Overlay)
 C) Population and Volume Estimation  
 D) Relief and Supply Estimation  
 E) Edge Buffering and Damage Classification  
-F) Tunnel/Bridge Overrides and Node Damage
-G) Damaged Node Calculation
+F) Tunnel/Bridge Overrides and Node Damage  
+G) Damaged Node Calculation  
 H) Shortest Path Analysis  
 I) Betweenness Centrality Analysis  
 
