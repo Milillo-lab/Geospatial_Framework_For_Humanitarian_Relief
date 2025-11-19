@@ -3,25 +3,22 @@
 
 <p align="center">
   <strong>
-    Ashutosh Lamsal<sup>1,2</sup>, 
-    Demirkan Orhun Oral<sup>1,2</sup>, 
-    Pietro Milillo<sup>1,2,3</sup>
+    Ashutosh Lamsal<sup>1</sup>, 
+    Demirkan Orhun Oral<sup>1</sup>, 
+    Pietro Milillo<sup>1,2</sup>
   </strong>
 </p>
 
 <p align="center">
   <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston,<br>
   Houston, TX, USA<br>
-  <sup>2</sup> National Center for Airborne Laser Mapping (NCALM), University of Houston,<br>
-  Houston, TX, USA<br>
-  <sup>3</sup> German Aerospace Centre (DLR), Microwaves and Radar Institute,<br>
+  <sup>2</sup> German Aerospace Centre (DLR), Microwaves and Radar Institute,<br>
   Munich, Germany
 </p>
 
 <p align="center"><em>CIVE 6381 - Applied Geospatial Computations (Fall/2025)</em></p>
 
 ---
-
 
 
 ## 1. Aim of the Project
