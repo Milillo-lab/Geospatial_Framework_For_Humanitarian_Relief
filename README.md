@@ -1,5 +1,11 @@
 # Urban Damage and Infrastructure Analysis Pipeline
 
+Ashutosh Lamsal¹, Demirkan Orhun Oral¹, Pietro Milillo¹
+
+¹ Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA
+
+
+
 ## 1. Aim of the Project
 
 This project provides a comprehensive, automated framework for assessing urban damage, population exposure, and accessibility following an earthquake or similar disaster.
