@@ -2,7 +2,7 @@
 ---
 
 <p align="center">
-  <strong>Ashutosh Lamsal<sup>1</sup>, Demirkan Orhun Oral<sup>1</sup></strong>
+  <strong>Ashutosh Lamsal<sup>1</sup>, Demirkan Orhun Oral<sup>1</sup>, Pietro Milillo<sup>1</sup></strong>
 </p>
 
 <p align="center">
@@ -11,7 +11,6 @@
 </p>
 
 ---
-
 
 
 ## 1. Aim of the Project
