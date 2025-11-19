@@ -2,7 +2,7 @@
 ---
 
 <p align="center">
-  <strong>Ashutosh Lamsal<sup>1</sup><sup>2</sup>sup>, Demirkan Orhun Oral<sup>1</sup><sup>2</sup>sup>, Pietro Milillo<sup>1</sup><sup>2</sup></strong>
+  <strong>Ashutosh Lamsal<sup>1</sup><sup>,2</sup>sup>, Demirkan Orhun Oral<sup>1</sup><sup>,2</sup>, Pietro Milillo<sup>1</sup><sup>,2</sup></strong>
 </p>
 
 <p align="center">
