@@ -10,10 +10,8 @@
 </p>
 
 <p align="center">
-  <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston,<br>
-  Houston, TX, USA<br>
-  <sup>2</sup> German Aerospace Centre (DLR), Microwaves and Radar Institute,<br>
-  Munich, Germany
+  <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston,<br>  Houston, TX, USA<br>
+  <sup>2</sup> German Aerospace Centre (DLR), Microwaves and Radar Institute,<br>  Munich, Germany
 </p>
 
 <p align="center"><em>CIVE 6381 - Applied Geospatial Computations (Fall/2025)</em></p>
