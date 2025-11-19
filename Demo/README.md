@@ -12,7 +12,7 @@ the main README.md file instructions in main GitHub repository.
 	2. Population
 		into the ./Data folder. 
 		
-	##How_to_Downloads - instructions can be followed if necessary.
+## How_to_Downloads - instructions can be followed if necessary.
 	
 The code is modular, once completely run, all of the pipeline can get the necessary data from
 ./Outputs/A-I folders to run itself. Hence if for instance;
