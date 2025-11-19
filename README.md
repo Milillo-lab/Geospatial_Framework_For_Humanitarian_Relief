@@ -1,8 +1,16 @@
 # Urban Damage and Infrastructure Analysis Pipeline
+---
 
-Ashutosh Lamsal¹, Demirkan Orhun Oral¹, Pietro Milillo¹
+<p align="center">
+  <strong>Ashutosh Lamsal<sup>1</sup>, Demirkan Orhun Oral<sup>1</sup></strong>
+</p>
 
-¹ Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA
+<p align="center">
+  <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston,<br>
+  Houston, TX, USA
+</p>
+
+---
 
 
 
