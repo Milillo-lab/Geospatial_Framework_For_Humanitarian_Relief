@@ -62,10 +62,19 @@ GRID_PARTS = require("GRID_PARTS", int)   # e.g., 4x4
 BBOX_PAD_DEG = require("BBOX_PAD_DEG", float)
 
 # If MODE == "coords": manual AOI polygon coordinates (lon, lat)
-AOI_COORDS = [tuple(p) for p in require("AOI_COORDS")]
+if MODE == "coords":
+    raw_coords = require("AOI_COORDS")  # expect list of [lon, lat]
+    if raw_coords is None:
+        raise ValueError("AOI_COORDS must be set when MODE == 'coords'.")
+    AOI_COORDS = [tuple(p) for p in raw_coords]
+else:
+    AOI_COORDS = None  # not used
 
 # If MODE == "shapefile": path to a polygon shapefile (inside DATA_DIR)
-SHP_PATH = os.path.join(DATA_DIR, require("SHP_NAME", str))
+if MODE == "shapefile":
+    SHP_PATH = os.path.join(DATA_DIR, require("SHP_NAME", str))
+else:
+    SHP_PATH = None
 
 # ============================ A2) Helper Functions =========================
 def split_polygon(gdf_in: gpd.GeoDataFrame, n_parts: int = 16) -> gpd.GeoDataFrame:
@@ -533,3 +542,4 @@ print(f"Buildings (clipped to AOI):           {_count('bld_3857')}")
 print(f"OSM Edges:                              {_count('edges')}")
 print(f"OSM Nodes:                              {_count('nodes')}")
 print("==========================================\n")
+
