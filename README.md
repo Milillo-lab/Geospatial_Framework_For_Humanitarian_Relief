@@ -104,7 +104,9 @@ Default:
 ### Config.yaml -> Configuration file
 
 Designed to ease the use of user-led desicions throughout the code, divided for each section A to I.
-Follow the explanations while changing the config file to avoid any problems.
+Follow the explanations while changing the config file to avoid any problems. The pipeline has explanations for every step of the way within the
+sections, when necessary, the configuration file gives various options and explanations as well. One important note, the user is to re-run
+Section_0 each time there is a change in the configuration file. 
 
 ---
 
