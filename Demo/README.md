@@ -7,8 +7,7 @@ for the Kahramanmaraş - Türkiye 2023 Earthquakes. Still, it is highly recommen
 the main README.md file instructions in main GitHub repository.
 
 # Zenodo - Data Acqusition
-https://zenodo.org/records/17851494?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImViZGMwYmNmLTgyYmItNGI4Yy04MWM3LTg5ZDNhNjllZTM1MiIsImRhdGEiOnt9LCJyYW5kb20iOiJmZmU1YWQ0MzQ0NDMwNDYzNmJjMzdkMTU5OTVlODBiMiJ9.SQEScrM6akmSsAiQfr4ZQqJ6YoSsDrpkpivlbwByWlN8W0ZtE6Ew3Xz2U-NrqHy_6MmsvQ58pKsB_Rz5fd_pSA
-User is invited to download the necessary files from this link.
+https://zenodo.org/records/17851494 - User is invited to download the necessary files from this link.
 
 # Important
  As stated in the main instructions, user should put the two necessary Data
