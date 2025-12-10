@@ -7,7 +7,7 @@ for the Kahramanmaraş - Türkiye 2023 Earthquakes. Still, it is highly recommen
 the main README.md file instructions in main GitHub repository.
 
 # Zenodo - Data Acqusition
-https://zenodo.org/records/17806825?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImViZGMwYmNmLTgyYmItNGI4Yy04MWM3LTg5ZDNhNjllZTM1MiIsImRhdGEiOnt9LCJyYW5kb20iOiJmZmU1YWQ0MzQ0NDMwNDYzNmJjMzdkMTU5OTVlODBiMiJ9.SQEScrM6akmSsAiQfr4ZQqJ6YoSsDrpkpivlbwByWlN8W0ZtE6Ew3Xz2U-NrqHy_6MmsvQ58pKsB_Rz5fd_pSA
+https://zenodo.org/records/17851494?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImViZGMwYmNmLTgyYmItNGI4Yy04MWM3LTg5ZDNhNjllZTM1MiIsImRhdGEiOnt9LCJyYW5kb20iOiJmZmU1YWQ0MzQ0NDMwNDYzNmJjMzdkMTU5OTVlODBiMiJ9.SQEScrM6akmSsAiQfr4ZQqJ6YoSsDrpkpivlbwByWlN8W0ZtE6Ew3Xz2U-NrqHy_6MmsvQ58pKsB_Rz5fd_pSA
 User is invited to download the necessary files from this link.
 
 # Important
@@ -17,7 +17,7 @@ User is invited to download the necessary files from this link.
 		into the ./Data folder. 
  How_to_Downloads - instructions can be followed if necessary.
  Also, in the case of Building downloading (Section A) is not working due to the server issues, 	
-all_buildings_selected_region.rar can be downloaded from the Zenodo and its content pasted inside ./Outputs/A - This will allow the HADAW to work without problems in the incoming sections.
+cleaned_buildings_selected_region.rar can be downloaded from the Zenodo and its content pasted inside ./Outputs/A - This will allow the HADAW to work without problems in the incoming sections.
 	
 ## The code is modular;
  once completely run, all of the pipeline can get the necessary data from
