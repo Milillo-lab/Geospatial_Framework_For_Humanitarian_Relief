@@ -4,7 +4,7 @@ This pipeline requires a Damage Proxy Map (DPM) raster to identify damaged areas
 
 ## Requirements
 - File format: **GeoTIFF (.tif)**
-- **Single band** (grayscale values)
+- **Single band** (grayscale values) in between 0 and 1
 - Higher values = more likely damaged
 - Must cover the analysis area (AOI)
 - Must include valid spatial reference (CRS)
@@ -188,6 +188,7 @@ A: Try alternative spellings or check for regional packs.
 
 **Q: The values look too small/large.**
 A: Confirm whether the layer is **population per pixel** vs **density per km²**, and check if you need to resample or aggregate.
+
 
 
 
